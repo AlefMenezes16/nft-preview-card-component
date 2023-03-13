@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://alefmenezes16.github.io/cartao-de-produto/)
-- Live Site URL: [Github Pages](https://alefmenezes16.github.io/cartao-de-produto/)
+- Solution URL: [Frontend Mentor](#)
+- Live Site URL: [Github Pages](https://alefmenezes16.github.io/nft-preview-card-component/)
 
 ## Author
 
