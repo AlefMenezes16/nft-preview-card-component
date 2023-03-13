@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:hsl(217, 54%, 11%);
+    color: white;  
+}
+
+#container {
+  border-radius: 10px;
+  background-color: hsl(216, 50%, 16%);
+  width: 100%;
+  max-width: 300px;
+  margin: 56px auto 0px;
+}
+
+#imagem {
+  position: relative;
+}
+
+#img-equi {
+  width: 90%;
+  display: inline;
+  margin: 1rem auto 1rem 1rem;
+  border-radius: 10px;
+}
+
+#imagem::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 10px;
+  top: 15px;
+  left: 16px;
+  width: 90%;
+  height: 88.6%;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s ease, background-color 0.5s ease;
+  cursor: pointer;
+}
+
+#imagem:hover::before {
+  opacity: 0.5;
+  background-color: rgba(0, 247, 255, 0.5);
+}
+
+#icone-view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background-image: url(./images/icon-view.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
+}
+
+#imagem:hover #icone-view {
+  opacity: 1;
+}
+
+#content #p1 {
+  padding-left: 1.1rem;
+  padding-bottom: 1rem;
+  font-family: 'outfit';
+  font-weight: 600;
+  font-size: 18px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#content #p1:hover {
+  color: aqua;
+}
+
+#content #p2 {
+  padding: 0 1.1rem 1.1rem;
+  font-family: 'outfit';
+  font-size: 16px;
+  font-weight: 400;
+  color: hsl(215, 24%, 47%);
+}
+
+#infor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.1rem 1.6rem;
+  font-family: 'outfit';
+  font-size: 14px
+}
+
+#etehrium{
+  display: flex;
+  align-items: center;
+  color: hsl(178, 100%, 50%);
+}
+
+.eth {
+  padding-right: 0.5rem;
+}
+
+#clock {
+  display: flex;
+  align-items: center;
+}
+
+.clo {
+  padding-right: 0.5rem;
+}
+
+hr {
+  margin: 0 18px;
+  border-color: rgb(164, 149, 149);
+}
+
+#criador {
+  display: flex;
+  align-items: center;
+  font-family: 'outfit';
+  padding: 1.3rem 1.1rem 1.5rem;
+}
+
+.imagem-criador {
+  width: 2rem;
+  border: solid 1.5px;
+  border-radius: 50px;
+}
+
+#prag {
+  padding-left: 0.5rem;
+  color:hsl(215, 24%, 47%); ;
+}
+
+strong {
+  padding-left: 0.3rem;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+strong:hover {
+  color: aqua;
+}
+
+footer {
+  font-size: 11px;
+  text-align: center;
+  padding-top: 1rem;
+  font-family: 'outfit';
+}
+footer a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
