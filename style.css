@@ -103,7 +103,7 @@ body {
 #etehrium{
   display: flex;
   align-items: center;
-  color: hsl(178, 100%, 50%);
+  color: hsl(178, 100%, 45%);
 }
 
 .eth {
